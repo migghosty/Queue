@@ -52,6 +52,7 @@ public:
 		Node* toDelete = head;
 		T res = toDelete->val;
 		head = head->next;
+		delete toDelete;
 		return res;
 	}
 
