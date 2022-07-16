@@ -16,5 +16,14 @@ int main() {
 	qll.deq();
 	std::cout << qll.front() << std::endl;
 
+	qll.enq(12);
+	qll.enq(86);
+	qll.enq(2);
+
+	while (!qll.empty()) {
+		std::cout << qll.deq() << std::endl;
+
+	}
+
 	return 0;
 }
